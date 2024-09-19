@@ -15,9 +15,9 @@ jobs:
           command: |
             pytest 
       - store_test_results:
-          path: test-reports
+          path: /tmp/test-reports
       - store_artifacts:
-          path: test-reports
+          path: /tmp/test-reports
 workflows:
   build_test:
     jobs:
